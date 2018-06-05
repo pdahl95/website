@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exercise 4</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        var classRoom = {
+            startDate: "2017-01-01",
+            endDate: "2017-06-01",
+            name: "Web Design",
+            instructorName: "Saeid",
+            building: "209",
+            room: "living room",
+            printProperties : function(){
+                for(var key in this){
+                    if(key!='printProperties'){
+                        document.write("<p>" + key + ":" + this[key] + "</p>");   
+                    }
+                }    
+            }
+        }
+        // I am using classRoom printProperties object, but I also have another function
+        // in main.js and I can just pass classroom object to it -> printObject(classRoom);
+        classRoom.printProperties();
+    </script>
+</body>
+
+</html>

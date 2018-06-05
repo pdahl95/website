@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Photo Gallery </title>
+    <link rel="stylesheet" type="text/css" href="/Labs/Lab2/css/stylephotogallery.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+   
+   <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+
+<body id='backgroundGradiant'>
+    <script type="text/javascript" src="/Labs/Lab2/js/stylelab2.js"></script>
+    <div class='box'>
+        <div>
+            <h1>
+                <font color="#228B22">
+                    <center> Welcome to MeyeCare! </center>
+                </font>
+            </h1>
+           <ul class="menu">
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Labs/Lab1/homepage.html">Home</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment1/aboutus.html">About Us</a></li> |
+                <li><a href="#">Exam Locations</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment4/Part1/shopglasses.html">Shop for Glasses</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Labs/Lab2/PhotoGallery.html">Photo Gallery</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment4/Part2/contactus.html">Contact Us</a>
+                    <ul class="menuacc">
+                        <li>
+                            <a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment4/Part2/support.html"></a>Support</li>
+                        <li>
+                            <a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment4/Part2/faqs.html"></a>FAQs</li>
+                        <li>
+                            <a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment1/aboutus.html"></a>About MeyeCare</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+    <div class="slideshow">
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="http://www.baeyesite.com/wp-content/uploads/2014/07/kids-glasses-children-eyeglasses-381.jpg" style="width:600px; height:450px">
+            <img class="mySlides" src="http://www.optiwow.com/blog/wp-content/uploads/2015/02/boy-in-glasses-21.png" style="width:600px; height:450px">
+            <img class="mySlides" src="http://www.smallfryblog.com/wp-content/uploads/2014/04/jonaspaul1-225x225.jpg" style="width:600px; height:450px">
+            <img class="mySlides" src="https://cdn.shopify.com/s/files/1/0879/4406/products/Ruth-Tortoise-Round-Girls-Glasses-by-Jonas-Paul-Eyewear_grande.jpg?v=1470231710" style="width:600px; height:450px">
+
+            <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+            <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+        
+    </div>
+      
+
+        <nav class="nav">
+            <a href="https://cst221-spring2017-peerni95.c9users.io/Labs/Lab1/homepage.html"> Back To Homepage </a>
+        </nav>
+        
+    
+<script type="text/javascript" src="js/jquerymenu.js"></script>
+</body>
+
+</html>

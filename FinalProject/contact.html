@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body class="mainbody">
+    <div class="backgroundContact">
+        <div class="header"></div>
+        <!--start of my interactive contact us page-->
+        <div class="form">
+            <p class="contact">GET IN TOUCH!</p>
+            <span class="info1">
+                <span class="info2">TALK TO US</span> <br>Have a question or comment? <br> Please call 844-LES-MILLS or <br>contact us via our easy-to-use<br> automated form. </span>
+            <p class="contact1">
+                YOUR INFORMATION
+            </p>
+
+            <div class="form1">
+                <form id='form' name="form-reg" action="/FinalProject/php/saveData.php" method="POST">
+                    <label for="name">First Name:*  </label><br>
+                    <input type="text" name="name" id="name" required/><br>
+                    <label for="lastname">Last Name:* </label><br>
+                    <input type="text" name="lastname" id="lastname"  required/><br>
+                    <label for="email">Email:* </label><br>
+                    <input type="email" name="email" id="email"  required/><br>
+                    <label for="dropdown">Tell Us About Yourself:</label><br>
+                    <select> 
+                    <option value=" I work in a club or fitness facility ">I work in a club or fitness facility</option>
+                    <option value=" I'm an instructor (or would like to be)  ">I'm an instructor (or would like to be)</option>
+                    <option value=" I want to workout ">I want to workout </option>
+                </select><br><br>
+                    <label for="radiobutton">Where Are You Located:</label><br>
+                    <input type="radio" name="location" value="USA" checked> <span class="radio">USA</span><br>
+                    <input type="radio" name="location" value="New Zealand" checked> <span class="radio">New Zealand</span><br>
+                    <input type="radio" name="location" value="Canada" checked> <span class="radio">Canada</span><br>
+                    <label for="textarea">Your message:*</label><br>
+                    <textarea name="question" size="60" maxlength="190 " rows="10" cols="90"  required></textarea><br>
+
+                    <!--<div id='send'><span class="send">Send</span></div><br>-->
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="footer"></div>
+    </div>
+    <script type="text/javascript">
+        loadHeader();
+        loadFooter();
+    </script>
+
+    <!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>-->
+    <!--<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us </title>
+    <link rel="stylesheet" type="text/css" href="contact_style.css">
+</head>
+
+<body id='backgroundGradiant'>
+    <div class='box'>
+        <div>
+            <h1>
+                <font color="#228B22">
+                    <center> Welcome to MeyeCare! </center>
+                </font>
+            </h1>
+            <ul class="menu">
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Labs/Lab1/homepage.html">Home</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment1/aboutus.html">About Us</a></li> |
+                <li><a href="#">Exam Locations</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment3/shopglasses.html">Shop for Glasses</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Labs/Lab2/PhotoGallery.html">Photo Gallery</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Labs/Lab4/contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="form">
+            <p class="contact">
+                Contact Us Today!
+            </p>
+            <span class="info1">We are happy to answer any questions you have or provide you with an estimate. <br>
+            Just send us a message in the form below. </span>
+            <p class="contact1">
+                Your Information
+            </p>
+
+            <div class="form1">
+                <form action="http://meyecare.herokuapp.com/support" method="POST">
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label for="name">Name: <span class="redstar">*</span> </label><br>
+                                    <input type="text" name="name" id="name" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                     <label for="email">Email: <span class="redstar">*</span></label><br>
+                                    <input type="text" name="email" id="email" />
+                                </div>
+                            </td>
+                        </tr>   
+                        <tr>
+                            <td>
+                                <div>
+                                    Enter your question/issue here: <span class="redstar">*</span> <br>
+                                    <textarea name="question" size="60" maxlength="190 "row="80" cols="50"></textarea>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <input type="submit"/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+
+
+        <!--footer starts here-->
+        <div>
+            <footer class="footer" style="background-color: grey;">
+                <p>
+                    <center> &copy; 2015 - All rights Reserved. </center>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

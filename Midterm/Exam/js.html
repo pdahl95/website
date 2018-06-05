@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problem 2 -js.html</title>
+    <link rel="stylesheet" type="text/css" href="page_style.css">
+</head>
+
+<body class="jsbody">
+    <script type="text/javascript">
+        function genereateSnellen(str) {
+            var fontSize = 500;
+            var randomCharacters = ["E", "F", "Z", "K", "L", "O", "I", "D"];
+            // assuming chart has 11 rows, so in totall we would have (1+2+ ...+11) characters
+            // which will be (11*12)/2 = 66
+            // var chartLength = 66;
+            var stringIndex = 0;
+            for (var chartLine = 1; chartLine <= 11; chartLine++) {
+                document.write("<div style=font-size:" + fontSize + "%>");
+                for (var j = 1; j <= chartLine; j++) {
+                    if (stringIndex + j < str.length) {
+                        character2print = str[stringIndex + j];
+                    }
+                    else {
+                        character2print = randomCharacters[Math.floor(Math.random() * randomCharacters.length)];
+                    }
+                    document.write(character2print.toUpperCase() + "");
+                    fontSize -= 10;
+                    stringIndex++;
+                }
+                document.write("</div>");
+            }
+        }
+
+        document.write("<h1> Called 1st</h1>");
+        genereateSnellen("adflkajdflkajaslkdfkhalksdhf");
+        document.write("<h1> Called 2nd</h1>");
+        genereateSnellen("customsnellenchart");
+        document.write("<h1> Called 3rd</h1>")
+        genereateSnellen("javascriptishardtounderstand");
+    </script>
+
+    <div>
+
+        <table border="1" width="600">
+            <tbody>
+                <tr>
+                    <th>#</th>
+                    <th>Task Description</th>
+                    <th>Points</th>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>1</td>
+                    <td>Make a function that accepts an string parameter</td>
+                    <td width="20" align="center">10</td>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>2</td>
+                    <td>Create a chart from the string passed in</td>
+                    <td width="20" align="center">10</td>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>3</td>
+                    <td>The chart has the correct number of characters in each line presented</td>
+                    <td width="20" align="center">10</td>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>4</td>
+                    <td>The chart has the correct sizes for each line presented</td>
+                    <td align="center">10</td>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>5</td>
+                    <td>The chart has the correct number of lines presented</td>
+                    <td width="20" align="center">10</td>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>6</td>
+                    <td>The chart generates random letters when there are not enough provided</td>
+                    <td width="20" align="center">20</td>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>7</td>
+                    <td>if-else is used to determine if enough characters were provided in the string parameter</td>
+                    <td width="20" align="center">10</td>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>8</td>
+                    <td>Call the function 3 times </td>
+                    <td width="20" align="center">10</td>
+                </tr>
+                <tr style="background-color:#FFC0C0">
+                    <td>9</td>
+                    <td>You use DOM manipulation to create the HTML elements</td>
+                    <td width="20" align="center">10</td>
+                </tr>
+                <tr style="background-color:#00FFFF">
+                    <td>10</td>
+                    <td>This rubric is properly included AND UPDATED (BONUS)</td>
+                    <td width="20" align="center">2</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>T O T A L </td>
+                    <td width="20" align="center"><b></b></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

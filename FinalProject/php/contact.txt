@@ -1,0 +1,106 @@
+This is what we receive from our clients:
+
+array(5) {
+  ["name"]=>
+  string(5) "Saeid"
+  ["lastname"]=>
+  string(7) "Mirzaei"
+  ["email"]=>
+  string(23) "mirzaei.saeid@gmail.com"
+  ["location"]=>
+  string(6) "Canada"
+  ["question"]=>
+  string(5) "hello"
+}
+
+array(5) {
+  ["name"]=>
+  string(10) "alkdfjlakj"
+  ["lastname"]=>
+  string(12) "lakjdflakjdf"
+  ["email"]=>
+  string(13) "aldfkjalsdkfj"
+  ["location"]=>
+  string(6) "Canada"
+  ["question"]=>
+  string(9) "adfadfadf"
+}
+
+array(5) {
+  ["name"]=>
+  string(0) ""
+  ["lastname"]=>
+  string(0) ""
+  ["email"]=>
+  string(7) "ghghkdd"
+  ["location"]=>
+  string(6) "Canada"
+  ["question"]=>
+  string(0) ""
+}
+
+array(5) {
+  ["name"]=>
+  string(0) ""
+  ["lastname"]=>
+  string(0) ""
+  ["email"]=>
+  string(6) "dddddd"
+  ["location"]=>
+  string(6) "Canada"
+  ["question"]=>
+  string(0) ""
+}
+
+array(5) {
+  ["name"]=>
+  string(4) "dddd"
+  ["lastname"]=>
+  string(2) "dd"
+  ["email"]=>
+  string(3) "ddd"
+  ["location"]=>
+  string(6) "Canada"
+  ["question"]=>
+  string(0) ""
+}
+
+array(5) {
+  ["name"]=>
+  string(0) ""
+  ["lastname"]=>
+  string(0) ""
+  ["email"]=>
+  string(0) ""
+  ["location"]=>
+  string(6) "Canada"
+  ["question"]=>
+  string(0) ""
+}
+
+array(5) {
+  ["name"]=>
+  string(8) "Pernille"
+  ["lastname"]=>
+  string(4) "Dahl"
+  ["email"]=>
+  string(24) "peernille.dahl@gmail.com"
+  ["location"]=>
+  string(6) "Canada"
+  ["question"]=>
+  string(4) "dddd"
+}
+
+array(5) {
+  ["name"]=>
+  string(4) "hhgg"
+  ["lastname"]=>
+  string(5) "hyfhf"
+  ["email"]=>
+  string(13) "ddd@gmail.com"
+  ["location"]=>
+  string(6) "Canada"
+  ["question"]=>
+  string(3) "fff"
+}
+

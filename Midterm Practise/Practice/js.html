@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js - Midterm</title>
+</head>
+
+<body>
+
+    
+       <table border="1" width="600">
+        <tbody><tr>
+         <th>#</th>
+         <th>Task Description</th>
+         <th>Points</th>
+        </tr>
+        <tr style="background-color:#FFC0C0">
+         <td>1</td>
+         <td>Make a function that accepts an array and test length</td>
+         <td width="20" align="center">10</td>
+        </tr>
+        <tr style="background-color:#FFC0C0">
+         <td>2</td>
+         <td>Create word array and pass that array plus length into function</td>
+         <td width="20" align="center">10</td>
+        </tr>
+        <tr style="background-color:#FFC0C0">
+         <td>3</td>
+         <td>For loop through array inside function, testing lengths</td>
+         <td width="20" align="center">15</td>
+        </tr>
+        <tr style="background-color:#FFC0C0">
+         <td>4</td>
+         <td>Create new array and add object to array for each test</td>
+         <td align="center">15</td>
+        </tr>
+        <tr style="background-color:#FFC0C0">
+         <td>5</td>
+         <td>Each object has 3 properties</td>
+         <td width="20" align="center">10</td>
+        </tr>
+        <tr style="background-color:#FFC0C0">
+         <td>6</td>
+         <td>For loop through results array, outputing HTML with document.write (or other) </td>
+         <td width="20" align="center">10</td>
+        </tr>
+        <tr style="background-color:#99E999">
+         <td>7</td>
+         <td>Call the function 3 times with the lengths provided</td>
+         <td width="20" align="center">2</td>
+        </tr>
+        <tr>
+         <td></td>
+         <td>T O T A L </td>
+         <td width="20" align="center"><b></b></td>
+        </tr>
+       </tbody></table>
+      
+
+    <script>
+        var listOfWords = [
+            "persist",
+            "costume",
+            "chin",
+            "perfume",
+            "equip",
+            "safe",
+            "volume",
+            "suitcase",
+            "spoil",
+            "sense",
+            "functional",
+            "navy",
+            "vat",
+            "iron",
+            "aisle",
+            "expertise",
+            "light",
+            "science",
+            "highlight",
+            "explode"];
+
+        function calculateWords(words, number) {
+            var result = [];
+            for (var i = 0; i < words.length; i++) {
+                var res = {
+                    'originalWord':"",
+                    'length':"",
+                    'isLongEnoughToPrint':""
+                };
+                res.originalWord = words[i];
+                res.length = words[i].length;
+                res.isLongEnoughToPrint = true;
+                if (words[i].length < number ) {
+                    res.isLongEnoughToPrint = false;
+                }
+                result.push(res);
+            }
+            return result;
+        }
+        
+        function printNicly(arr){
+            for (var i=0;i<arr.length;i++){
+                document.write(arr[i].originalWord + '\t');
+                document.write(arr[i].length + '\t');
+                document.write(arr[i].isLongEnoughToPrint + '\t');
+                document.write('<br>');
+            }    
+        }
+        // var output = calculateWords(['saeid','pernille','angel','naserpeiravian','bryanCove'],6);
+        
+        document.write("<h1>NUMBER = 3</h1>");
+        var output = calculateWords(listOfWords,3);
+        printNicly(output);
+        
+        document.write("<h1>NUMBER = 5</h1>");
+        var output = calculateWords(listOfWords,5);
+        printNicly(output);
+        
+        document.write("<h1>NUMBER = 8</h1>");
+        var output = calculateWords(listOfWords,8);
+        printNicly(output);
+    </script>
+
+</body>
+
+</html>

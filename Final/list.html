@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> List</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/csstohomepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
+</head>
+
+<body id='backgroundGradiant'>
+    <div class='box'>
+        <div>
+            <h1>
+                <font color="#228B22">
+                    <center> Welcome to MeyeCare! </center>
+                </font>
+            </h1>
+            <ul class="menu">
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Labs/Lab1/homepage.html">Home</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Assignments/Assignment1/aboutus.html">About Us</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Final/add.html">Shop </a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Final/list.html">Bookmarks</a></li> |
+                <li><a href="https://cst221-spring2017-peerni95.c9users.io/Labs/Lab4/contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+
+            <input id="btnSearch" type='text' placeholder=" &#9906 Search.."><button id='search'>Search</button>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://cst221-spring2017-peerni95.c9users.io/Final/add.html">&#10010; Add Bookmark</a>
+            <br><br>
+            <div id="items"></div>
+
+
+            <table border="1" width="600">
+                <tbody>
+                    <tr>
+                        <th>#</th>
+                        <th>Task Description</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>1</td>
+                        <td>The pages use the meyecare layout from assignments and labs</td>
+                        <td width="20" align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>2</td>
+                        <td>CSS is in separate file</td>
+                        <td align="center">5</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>3</td>
+                        <td>jQuery file(s) are properly included</td>
+                        <td align="center">5</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>4</td>
+                        <td>JS is in separate file</td>
+                        <td align="center">5</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>5</td>
+                        <td>Appropriate JS code inside document.ready</td>
+                        <td align="center">5</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>6</td>
+                        <td>The list uses $.ajax to GET the data from your custom data URL</td>
+                        <td align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#FFC0C0">
+                        <td>7</td>
+                        <td>The list page displays all bookmarks as specified</td>
+                        <td align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>8</td>
+                        <td>The add page has all the inputs, buttons and links as specified</td>
+                        <td align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>9</td>
+                        <td>The add uses $.ajax to POST the collected data to your custom addToList URL</td>
+                        <td align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>10</td>
+                        <td>The cancel button on the add page goes from the add page to the list page without saving</td>
+                        <td align="center">5</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>11</td>
+                        <td>The add button on the list page takes the user to the add page without any of the fields having values (blank page)</td>
+                        <td align="center">5</td>
+                    </tr>
+                    <tr style="background-color:#FFC0C0">
+                        <td>12</td>
+                        <td>User can search for text that matches in make, model and reason, and only those entries that match show in the list</td>
+                        <td align="center">15</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>13</td>
+                        <td>Make, model and glasses image URL are validated properly before being posted</td>
+                        <td align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#FFC0C0">
+                        <td>14</td>
+                        <td>When the reason is not provided, the list page moves up the make and model description</td>
+                        <td align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>15</td>
+                        <td>When there are no items in the list, the user gets a message and link to the add page</td>
+                        <td align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>16</td>
+                        <td>Code is commented and well formated</td>
+                        <td align="center">10</td>
+                    </tr>
+                    <tr style="background-color:#FFC0C0">
+                        <td>17</td>
+                        <td>Uses bootstrap for styling</td>
+                        <td align="center">5</td>
+                    </tr>
+                    <tr style="background-color:#B22222">
+                        <td>18</td>
+                        <td>This rubric is properly included AND UPDATED (BONUS)</td>
+                        <td width="20" align="center">2</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>T O T A L </td>
+                        <td width="20" align="center"><b>142</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!--footer starts here-->
+        <div>
+            <footer class="footer" style="background-color: grey;">
+                <p>
+                    <center> &copy; 2015 - All rights Reserved. </center>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

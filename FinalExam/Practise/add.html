@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Steampunks</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/add.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+    <!-- Optional bootstrap theme -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+ 
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1 class="title">Steampunks</h1>
+        </div>
+        <div class="addUrlContent">
+            <form form id='form' name="form-reg" method="POST">
+                <p class="textUrl">URL of page where you found the image:</p>
+                <input type="text" id="url"name="urlWhere" /><br>
+                <p class="textUrl">URL of the image:</p>
+                <input type="text" id="urlImage" name="urlImage" required /><br>
+                <br>
+                <p class="textUrl">Description:</p>
+                <textarea rows="4" cols="50" id="description" required ></textarea>
+            </form>
+
+            <div class="saveLink"> Save Steampunk Link </div>
+            <div class="listOfLink">
+                <a class="listOfLinkA" href="https://cst221-spring2017-peerni95.c9users.io/FinalExam/Practise/list.html">List of Steampunk Links</a>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p class="copy">Copyright 2017</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

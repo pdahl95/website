@@ -1,0 +1,197 @@
+#backgroundGradiant {
+    height: 100%;
+    background: dodgerBlue;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(dodgerBlue, white);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(dodgerBlue, white);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(DodgerBlue, white);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(DodgerBlue, white);
+    /* Standard syntax (must be last) */
+    
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 45px;
+}
+
+body {
+    font-family: Arial;
+    height: 100%;
+}
+
+.box {
+    width: 55%;
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    background: #FFFFFF;
+    margin-left: 22.5%;
+}
+
+img {
+    width: 180px;
+    height: 120px;
+    padding-bottom: 20px;
+}
+
+.clearfix {
+    width: 350px;
+    height: 250px;
+    display: inline-table;
+}
+
+li {
+    display: inline;
+}
+
+.menu clearfix {
+    text-align: center;
+    width: 100%;
+    display: inline;
+    background-color: #B22222;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: auto;
+}
+
+#content {
+    padding-top: 0px;
+    padding-left: 10px;
+    margin: auto;
+}
+
+ul {
+    display: block;
+    background-color: #B22222;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    position: center;
+}
+
+li a {
+    color: white;
+}
+
+.footer {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: 12px;
+}
+
+h2 {
+    text-align: center;
+    color: #228B22;
+}
+
+.people {
+    height: 900px;
+    width: 900px;
+}
+
+.history {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.heading {
+    padding-top: 40px;
+}
+
+.clearfixx {
+    width: 350px;
+    height: 220px;
+}
+
+.big {
+    height: 300px;
+    width: 300px;
+}
+
+.tile{
+   margin-bottom: 5px;
+   margin-top: 5px;
+   padding-left: 20px;
+   line-height: 1.5;
+}
+
+.addprod{
+    background-color: #f6f6f6;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 1.5;
+    
+}
+
+.shopping{
+    font-size: 40px;
+    color:green;
+    font-weight: bold;
+    text-align: center;
+}
+
+img{
+    float: left;
+    margin-top: -200px;
+
+}
+
+.factureProd{
+    color: #228B22;
+    font-size: 18px;
+    font-weight: bold;
+    width: 400px;
+    margin-left: 300px;
+}
+.priceDiv{
+    font-weight: bold;
+    font-style: italic;
+    width: 400px;
+    margin-left: 300px;
+}
+.descriptionDiv{
+    width: 400px;
+    margin-left: 300px;
+}
+.nameDiv{
+    width: 400px;
+    margin-left: 300px;
+}
+
+.addItem{
+    background-color: #B22222;
+    border-radius: 15px;
+    border: 1px solid #B22222;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 200px;
+    margin-left: 500px;
+    margin-top:-200px;
+    margin-bottom: 50px;
+}
+.menuacc{
+    display: list-item;
+}
+menu ui-menu ui-widget ui-widget-content{
+    text-align: center;
+    width: 100%;
+    display: inline;
+    background-color: #B22222;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: auto;
+}

@@ -1,0 +1,56 @@
+body {
+    width: 950px;
+    height: auto;
+    margin: 10px auto;
+    background-image: url(https://www.publicdomainpictures.net/pictures/70000/velka/blue-sky-with-cloud-1385838696m6D.jpg);
+}
+
+#content {
+    margin: auto;
+    max-width: 800px;
+    border-radius: 0px;
+    /*background-color: white;*/
+    overflow: auto;
+    font-family: fantasy;
+}
+#location{
+    font-family: fantasy;
+    font-size: 26px;
+    border-radius:15px;
+    border: 1px solid #ADD8E6;
+}
+.title{
+    font-family: fantasy;
+    font-size: 100px;
+    color: white;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+a{
+    color: black;
+    font-size: 26px;
+}
+h2{
+    font-size: 36px;
+}
+
+#results {
+    margin: auto;
+    max-width: 500px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    overflow: auto;
+    padding-left: 10px;
+    font-family: fantasy;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 56px;
+    color: #3333FF;
+}

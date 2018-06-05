@@ -1,0 +1,22 @@
+#container {
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#header {
+    border-bottom: 2px solid blue;
+    font-style: bold;
+    font-size: 70px;
+}
+
+#steam {
+    border: 1px solid black;
+    
+}
+
+#steam img {
+    width: 500px;
+}
